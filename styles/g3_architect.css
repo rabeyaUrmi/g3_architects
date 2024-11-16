@@ -3,6 +3,11 @@
     font-family: "Encode Sans Condensed", serif;
 }
 
+body {
+    padding: 0;
+    margin: 0;
+}
+
 .btn-primary {
     border: 0;
     background-color: #FF900E;
@@ -128,6 +133,67 @@ main {
     width: 80%;
 }
 
+/* feature styles */
+.feature-container {
+    margin-top: 100px;
+    display: flex;
+    gap: 100px;
+}
+
+.feature-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    font-size: 40px;
+}
+
+.feature-description {
+    font-size: 15px;
+    color: #727272;
+    letter-spacing: 1px;
+}
+
+.feature-card {
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.fcard-title {
+    font-size: 20px;
+}
+
+.fcarddescription {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.feature-image img {
+    height: 90%;
+    margin-left: 90px;
+}
+
+.ten-years-btn {
+    border-radius: 8px;
+    background-color: #FF900E;
+    color: #FFF;
+    width: 150px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    bottom: 80px;
+}
+
+.ten-years-btn h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.ten-years-btn p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
 /* Facts style */
 .facts {
     margin-top: 50px;
@@ -200,13 +266,26 @@ main {
 footer {
     max-width: 1200px;
     margin: 50px auto;
+    background-color: #FFF4E7;
+    padding: 25px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    letter-spacing: 1px;
 }
 
-.footer-title {
-    background-color: #FFF4E7;
-    text-align: center;
-    letter-spacing: 1px;
-    padding: 35px 0px;
+footer span,
+footer p,
+.footer-title,
+.footer-link {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /* Responsive styles */
@@ -296,6 +375,56 @@ footer {
         width: auto;
     }
 
+    /* feature styles */
+    .feature-container {
+        margin-top: 20px;
+        flex-direction: column;
+        padding: 0px 15px;
+    }
+
+    .feature-title {
+        padding-left: 10px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+    .feature-description,
+    .fcarddescription {
+        font-size: 12px;
+    }
+
+    .feature-card {
+        padding: 10px;
+    }
+
+    .fcard-title {
+        font-size: 15px;
+    }
+
+    .feature-image img {
+        margin-top: -100px;
+        height: 90%;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ten-years-btn {
+        width: 80px;
+        padding: 10px;
+        position: static;
+        margin-left: 100px;
+    }
+
+    .ten-years-btn h2 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .ten-years-btn p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
     /* Facts style */
     .facts,
     .sponspor-container {
@@ -347,11 +476,9 @@ footer {
     footer {
         width: auto;
         margin: 25px auto;
-    }
-
-    .footer-title {
-        font-size: 12px;
-        padding: 25px 0px;
+        flex-direction: column;
+        text-align: center;
+        font-size: 14px;
     }
 }
 
@@ -442,6 +569,56 @@ footer {
         width: auto;
     }
 
+    /* feature styles */
+    .feature-container {
+        margin-top: 20px;
+        flex-direction: column;
+        padding: 0px 15px;
+    }
+
+    .feature-title {
+        padding-left: 10px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+    .feature-description,
+    .fcarddescription {
+        font-size: 12px;
+    }
+
+    .feature-card {
+        padding: 10px;
+    }
+
+    .fcard-title {
+        font-size: 15px;
+    }
+
+    .feature-image img {
+        margin-top: -100px;
+        height: 90%;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ten-years-btn {
+        width: 80px;
+        padding: 10px;
+        position: static;
+        margin-left: 120px;
+    }
+
+    .ten-years-btn h2 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .ten-years-btn p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
     /* Facts style */
     .facts,
     .sponspor-container {
@@ -493,11 +670,9 @@ footer {
     footer {
         width: auto;
         margin: 25px auto;
-    }
-
-    .footer-title {
-        font-size: 13px;
-        padding: 25px 0px;
+        flex-direction: column;
+        text-align: center;
+        font-size: 14px;
     }
 }
 
@@ -586,6 +761,56 @@ footer {
         width: auto;
     }
 
+    /* feature styles */
+    .feature-container {
+        margin-top: 20px;
+        flex-direction: column;
+        padding: 0px 15px;
+    }
+
+    .feature-title {
+        padding-left: 10px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+    .feature-description,
+    .fcarddescription {
+        font-size: 12px;
+    }
+
+    .feature-card {
+        padding: 10px;
+    }
+
+    .fcard-title {
+        font-size: 15px;
+    }
+
+    .feature-image img {
+        margin-top: -100px;
+        height: 90%;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ten-years-btn {
+        width: 80px;
+        padding: 10px;
+        position: static;
+        margin-left: 150px;
+    }
+
+    .ten-years-btn h2 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .ten-years-btn p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
     /* Facts style */
     .facts,
     .sponspor-container {
@@ -637,11 +862,9 @@ footer {
     footer {
         width: auto;
         margin: 25px auto;
-    }
-
-    .footer-title {
+        flex-direction: column;
+        text-align: center;
         font-size: 14px;
-        padding: 28px 0px;
     }
 }
 
@@ -719,6 +942,52 @@ footer {
         width: auto;
     }
 
+    /* feature styles */
+    .feature-container {
+        margin-top: 50px;
+        padding: 0px 15px;
+    }
+
+    .feature-title {
+        padding-left: 10px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+    .feature-description,
+    .fcarddescription {
+        font-size: 12px;
+    }
+
+    .feature-card {
+        padding: 10px;
+    }
+
+    .fcard-title {
+        font-size: 15px;
+    }
+
+    .feature-image img {
+        width: 350px;
+        margin-left: 50px;
+    }
+
+    .ten-years-btn {
+        width: 80px;
+        padding: 20px;
+        bottom: 60px;
+    }
+
+    .ten-years-btn h2 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .ten-years-btn p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
     /* Facts style */
     .facts-title,
     .sponspor-title {
@@ -762,12 +1031,9 @@ footer {
     /* footer related style */
     footer {
         width: auto;
-        margin: 30px auto;
-    }
-
-    .footer-title {
-        font-size: 14px;
-        padding: 30px 0px;
+        margin: 25px auto;
+        text-align: center;
+        font-size: 15px;
     }
 }
 
@@ -843,6 +1109,52 @@ footer {
         margin-bottom: 15px;
         width: auto;
     }
+    
+     /* feature styles */
+     .feature-container {
+        margin-top: 50px;
+        padding: 0px 15px;
+    }
+
+    .feature-title {
+        padding-left: 10px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+    .feature-description,
+    .fcarddescription {
+        font-size: 12px;
+    }
+
+    .feature-card {
+        padding: 10px;
+    }
+
+    .fcard-title {
+        font-size: 15px;
+    }
+
+    .feature-image img {
+        width: 500px;
+        margin-left: 50px;
+    }
+
+    .ten-years-btn {
+        width: 80px;
+        padding: 20px;
+        bottom: 60px;
+    }
+
+    .ten-years-btn h2 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .ten-years-btn p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
 
     /* Facts style */
     .facts-title,
@@ -876,16 +1188,5 @@ footer {
 
     .sponspor-image-container img {
         width: 130px;
-    }
-
-    /* footer related style */
-    footer {
-        width: auto;
-        margin: 25px auto;
-    }
-
-    .footer-title {
-        font-size: 12px;
-        padding: 28px 0px;
     }
 }
